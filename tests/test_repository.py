@@ -27,3 +27,11 @@ def test_hacs_metadata() -> None:
     hacs = json.loads(Path("hacs.json").read_text())
 
     assert hacs["name"] == "Hassio Units"
+
+
+def test_hacs_brand_asset() -> None:
+    """Validate the HACS integration brand asset path."""
+    icon = Path("custom_components/hassio_units/brand/icon.png")
+
+    assert icon.is_file()
+    assert icon.read_bytes().startswith(b"\x89PNG\r\n\x1a\n")
