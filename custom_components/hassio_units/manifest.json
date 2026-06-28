@@ -1,0 +1,13 @@
+{
+  "domain": "hassio_units",
+  "name": "Hassio Units",
+  "codeowners": ["@tobias-"],
+  "config_flow": true,
+  "documentation": "https://github.com/tobias-/hassio_units/",
+  "integration_type": "helper",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/tobias-/hassio_units/issues",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "0.1.0"
+}

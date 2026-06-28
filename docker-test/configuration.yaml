@@ -1,0 +1,26 @@
+default_config:
+
+logger:
+  default: warning
+  logs:
+    custom_components.hassio_units: debug
+
+template:
+  - sensor:
+      - name: Grid Power kW
+        unique_id: grid_power_kw
+        state: "1.5"
+        unit_of_measurement: kW
+        device_class: power
+        state_class: measurement
+      - name: Grid Energy J
+        unique_id: grid_energy_j
+        state: "3600000"
+        unit_of_measurement: J
+        device_class: energy
+        state_class: total_increasing
+
+hassio_units:
+  targets:
+    power: W
+    energy: kWh

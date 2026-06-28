@@ -1,0 +1,11 @@
+__pycache__/
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+docker-test/.HA_VERSION
+docker-test/.ha_run.lock
+docker-test/.storage/
+docker-test/blueprints/
+docker-test/home-assistant*.log*
+docker-test/home-assistant_v2.db*

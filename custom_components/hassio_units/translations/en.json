@@ -1,0 +1,17 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Hassio Units is already configured.",
+      "single_instance_allowed": "Only one Hassio Units instance is allowed."
+    },
+    "step": {
+      "user": {
+        "title": "Set up Hassio Units",
+        "description": "Create normalized shadow sensors for convertible sensor units.",
+        "data": {
+          "name": "Name"
+        }
+      }
+    }
+  }
+}
